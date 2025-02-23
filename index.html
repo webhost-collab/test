@@ -40,6 +40,11 @@
     
     <h2>Embedded Video</h2>
     <div id="videoContainer"></div>
+    
+    <!-- External Script (added as requested) -->
+    <script async="async" data-cfasync="false" src="//pl25948082.effectiveratecpm.com/5af7e39aa53832e009cee563cbbae8ec/invoke.js"></script>
+    
+    <!-- Additional div (added as requested) -->
     <div id="container-5af7e39aa53832e009cee563cbbae8ec"></div>
 
     <script>
@@ -49,7 +54,6 @@
             
             // Check if the URL contains 'youtube' and if it's a valid YouTube URL
             if (videoURL.includes("youtube.com") || videoURL.includes("youtu.be")) {
-                // Extract the video ID from the URL
                 let videoId;
                 if (videoURL.includes("youtube.com")) {
                     // For youtube.com links, extract the video ID after "v="
