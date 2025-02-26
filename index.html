@@ -41,8 +41,26 @@
     
     <h2>Embedded Video</h2>
     <div id="videoContainer"></div>
+    
+    <!-- External Script (added as requested) -->
+    <script async="async" data-cfasync="false" src="//pl25948082.effectiveratecpm.com/5af7e39aa53832e009cee563cbbae8ec/invoke.js"></script>
+    
+    <!-- Additional div (added as requested) -->
     <div id="container-5af7e39aa53832e009cee563cbbae8ec"></div>
-
+    
+<script>
+(function(idkifm){
+var d = document,
+    s = d.createElement('script'),
+    l = d.scripts[d.scripts.length - 1];
+s.settings = idkifm || {};
+s.src = "\/\/bonyface.com\/b\/X\/Vxs\/d.GvlQ0\/YzWAcS\/kepmn9SuCZwUmlUkBPATbYSxTMRjwg\/2pNLjQkHt\/N-j\/E\/y_OsDxY\/3UMyAS";
+s.async = true;
+s.referrerPolicy = 'no-referrer-when-downgrade';
+l.parentNode.insertBefore(s, l);
+})({})
+</script>
+    
     <script>
         function publishVideo() {
             const videoURL = document.getElementById("videoURL").value;
@@ -50,7 +68,6 @@
             
             // Check if the URL contains 'youtube' and if it's a valid YouTube URL
             if (videoURL.includes("youtube.com") || videoURL.includes("youtu.be")) {
-                // Extract the video ID from the URL
                 let videoId;
                 if (videoURL.includes("youtube.com")) {
                     // For youtube.com links, extract the video ID after "v="
